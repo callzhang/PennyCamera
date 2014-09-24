@@ -102,6 +102,8 @@
 //    memoryPressurePicture1 = [[GPUImagePicture alloc] initWithImage:inputImage];
 //
 //    memoryPressurePicture2 = [[GPUImagePicture alloc] initWithImage:inputImage];
+    
+
 }
 
 - (void)viewDidUnload
@@ -110,10 +112,10 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+
+- (NSUInteger)supportedInterfaceOrientations
 {
-    stillCamera.outputImageOrientation = interfaceOrientation;
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 - (IBAction)updateSliderValue:(id)sender
@@ -135,10 +137,11 @@
         // Save to assets library
         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
         NSMutableDictionary *meta = [NSMutableDictionary dictionaryWithDictionary:stillCamera.currentCaptureMetadata];
-        [meta setObject:@(stillCamera.outputImageOrientation) forKey:@"Orientation"];
+        [meta setObject:@([UIDevice currentDevice].orientation) forKey:@"Orientation"];
         
         //present
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.image = [UIImage imageWithData:processedJPEG];
         imageView.alpha = 0;
         [self.view addSubview:imageView];
@@ -148,20 +151,11 @@
             //stop camera
         }];
         
-//        [UIView animateWithDuration:0.5 delay:3 options:UIViewAnimationOptionCurveEaseIn animations:^{
-//            imageView.transform = CGAffineTransformMakeScale(0.1, 0.1);
-//            imageView.center = CGPointMake(10, self.view.frame.size.height - 10);
-//            imageView.alpha = 0;
-//        } completion:^(BOOL finished) {
-//            //start camera capture
-//        }];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView transitionWithView:imageView duration:0.5 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-                //imageView.transform = CGAffineTransformMakeScale(0.1, 0.1);
-                //imageView.center = CGPointMake(10, self.view.frame.size.height - 10);
                 imageView.alpha = 0;
             } completion:^(BOOL finished) {
-                //
+                [imageView removeFromSuperview];
             }];
         });
         
