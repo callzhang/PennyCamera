@@ -8,6 +8,7 @@
     UISlider *filterSettingsSlider;
     UIButton *photoCaptureButton;
     UIButton *rotateButton;
+    UIButton *albumButton;
     GPUImagePicture *memoryPressurePicture1, *memoryPressurePicture2;
     AVAudioPlayer *player;
 }

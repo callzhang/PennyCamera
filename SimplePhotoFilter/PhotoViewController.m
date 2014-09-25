@@ -54,9 +54,15 @@
     rotateButton.frame = CGRectMake(15, 15, 30, 30);
     [rotateButton addTarget:self action:@selector(rotate:) forControlEvents:UIControlEventTouchUpInside];
     rotateButton.tintColor = [UIColor whiteColor];
+//    
+//    albumButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [albumButton setTitle:@"Album" forState:UIControlStateNormal];
+//    [albumButton addTarget:self action:@selector(presentAlbum:) forControlEvents:UIControlEventTouchUpInside];
+//    albumButton.frame = CGRectMake(15, primaryView.frame.size.height - 35, 30, 50);
     
     [primaryView addSubview:photoCaptureButton];
     [primaryView addSubview:rotateButton];
+//    [primaryView addSubview:albumButton];
     
 	self.view = primaryView;	
 }
@@ -126,6 +132,13 @@
 
 - (IBAction)rotate:(id)sender{
     [stillCamera rotateCamera];
+}
+
+- (IBAction)presentAlbum:(id)sender{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.allowsEditing = NO;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 
 - (IBAction)takePhoto:(id)sender;
