@@ -20,6 +20,20 @@
                ReferencedContainer = "container:SimplePhotoFilter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCC1E69B1523E3620006EFA5"
+               BuildableName = "PennyCemera.app"
+               BlueprintName = "PennyCemera"
+               ReferencedContainer = "container:PennyCemera.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
