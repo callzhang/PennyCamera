@@ -41,14 +41,14 @@
 		9B00906A19D36E1D00170305 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		9E07F62DB16842D7BA69B06C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6ED8E01545B9A900966798 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		BCC1E69C1523E3620006EFA5 /* PennyCemera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennyCemera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC1E69C1523E3620006EFA5 /* PennyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC1E6A01523E3620006EFA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCC1E6A21523E3620006EFA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCC1E6A41523E3620006EFA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BCC1E6A81523E3620006EFA5 /* PennyCemera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PennyCemera-Info.plist"; sourceTree = "<group>"; };
+		BCC1E6A81523E3620006EFA5 /* PennyCamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PennyCamera-Info.plist"; sourceTree = "<group>"; };
 		BCC1E6AA1523E3620006EFA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BCC1E6AC1523E3620006EFA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BCC1E6AE1523E3620006EFA5 /* PennyCemera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PennyCemera-Prefix.pch"; sourceTree = "<group>"; };
+		BCC1E6AE1523E3620006EFA5 /* PennyCamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PennyCamera-Prefix.pch"; sourceTree = "<group>"; };
 		BCC1E6AF1523E3630006EFA5 /* PhotoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAppDelegate.h; sourceTree = "<group>"; };
 		BCC1E6B01523E3630006EFA5 /* PhotoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAppDelegate.m; sourceTree = "<group>"; };
 		BCC1E6C61523E3C50006EFA5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -94,7 +94,7 @@
 		BCC1E69D1523E3620006EFA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BCC1E69C1523E3620006EFA5 /* PennyCemera.app */,
+				BCC1E69C1523E3620006EFA5 /* PennyCamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,10 +138,10 @@
 				9B00905F19D34C8D00170305 /* cameraButton@2x.png */,
 				9B00905A19D3491700170305 /* refresh.png */,
 				9B00905B19D3491700170305 /* refresh@2x.png */,
-				BCC1E6A81523E3620006EFA5 /* PennyCemera-Info.plist */,
+				BCC1E6A81523E3620006EFA5 /* PennyCamera-Info.plist */,
 				BCC1E6A91523E3620006EFA5 /* InfoPlist.strings */,
 				BCC1E6AC1523E3620006EFA5 /* main.m */,
-				BCC1E6AE1523E3620006EFA5 /* PennyCemera-Prefix.pch */,
+				BCC1E6AE1523E3620006EFA5 /* PennyCamera-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BCC1E69B1523E3620006EFA5 /* PennyCemera */ = {
+		BCC1E69B1523E3620006EFA5 /* PennyCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCC1E6B41523E3630006EFA5 /* Build configuration list for PBXNativeTarget "PennyCemera" */;
+			buildConfigurationList = BCC1E6B41523E3630006EFA5 /* Build configuration list for PBXNativeTarget "PennyCamera" */;
 			buildPhases = (
 				9E2A59ED6CC54AC799789DB2 /* Check Pods Manifest.lock */,
 				BCC1E6981523E3620006EFA5 /* Sources */,
@@ -163,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = PennyCemera;
+			name = PennyCamera;
 			productName = SimplePhotoFilter;
-			productReference = BCC1E69C1523E3620006EFA5 /* PennyCemera.app */;
+			productReference = BCC1E69C1523E3620006EFA5 /* PennyCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BCC1E6961523E3620006EFA5 /* Build configuration list for PBXProject "PennyCemera" */;
+			buildConfigurationList = BCC1E6961523E3620006EFA5 /* Build configuration list for PBXProject "PennyCamera" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCC1E69B1523E3620006EFA5 /* PennyCemera */,
+				BCC1E69B1523E3620006EFA5 /* PennyCamera */,
 			);
 		};
 /* End PBXProject section */
@@ -351,10 +351,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimplePhotoFilter/PennyCemera-Prefix.pch";
-				INFOPLIST_FILE = "SimplePhotoFilter/PennyCemera-Info.plist";
+				GCC_PREFIX_HEADER = "SimplePhotoFilter/PennyCamera-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoFilter/PennyCamera-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = PennyCemera;
+				PRODUCT_NAME = PennyCamera;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -368,10 +368,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SimplePhotoFilter/PennyCemera-Prefix.pch";
-				INFOPLIST_FILE = "SimplePhotoFilter/PennyCemera-Info.plist";
+				GCC_PREFIX_HEADER = "SimplePhotoFilter/PennyCamera-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoFilter/PennyCamera-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = PennyCemera;
+				PRODUCT_NAME = PennyCamera;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -379,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BCC1E6961523E3620006EFA5 /* Build configuration list for PBXProject "PennyCemera" */ = {
+		BCC1E6961523E3620006EFA5 /* Build configuration list for PBXProject "PennyCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCC1E6B21523E3630006EFA5 /* Debug */,
@@ -388,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCC1E6B41523E3630006EFA5 /* Build configuration list for PBXNativeTarget "PennyCemera" */ = {
+		BCC1E6B41523E3630006EFA5 /* Build configuration list for PBXNativeTarget "PennyCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCC1E6B51523E3630006EFA5 /* Debug */,

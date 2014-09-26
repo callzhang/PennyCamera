@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BCC1E69B1523E3620006EFA5"
-               BuildableName = "PennyCemera.app"
-               BlueprintName = "PennyCemera"
-               ReferencedContainer = "container:PennyCemera.xcodeproj">
+               BuildableName = "PennyCamera.app"
+               BlueprintName = "PennyCamera"
+               ReferencedContainer = "container:PennyCamera.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
